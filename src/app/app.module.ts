@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {HeaderModule} from './modules/header/header.module';
+import {SidebarModule} from './modules/sidebar/sidebar.module';
+import {TasksCatalogModule} from './modules/tasks-catalog/tasks-catalog.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +13,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HeaderModule,
+    SidebarModule,
+    TasksCatalogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
